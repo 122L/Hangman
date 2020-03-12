@@ -14,7 +14,7 @@ public class Hangman {
         Path WhoWon = Paths.get("C:\\Users\\og153182\\Desktop\\Java\\Hangman\\src\\Hangman\\WhoWon.txt");
 
         for(int i = 0; i < randomWord.length(); ++i) {
-            System.out.println("");
+            System.out.println(randomWord);
             System.out.print("_ ");
         }
     }
