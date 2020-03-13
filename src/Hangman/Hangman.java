@@ -13,9 +13,18 @@ public class Hangman {
         String randomWord = words[randomInt];
         Path WhoWon = Paths.get("C:\\Users\\og153182\\Desktop\\Java\\Hangman\\src\\Hangman\\WhoWon.txt");
 
+        System.out.print("                         |--------|\n" +
+                "                         |        |\n" +
+                "                        ( )       |\n" +
+                "                        -|-       |\n" +
+                "                         |        |\n" +
+                "                        / \\       |\n" +
+                "                                  |\n" +
+                "                                --|--");
+        System.out.println("");
         for(int i = 0; i < randomWord.length(); ++i) {
-            System.out.println(randomWord);
             System.out.print("_ ");
         }
+
     }
 }
