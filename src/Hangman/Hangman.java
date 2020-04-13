@@ -9,22 +9,12 @@ public class Hangman {
         String[] words = {"Bruh", "Guacamole", "Jouch", "Fortnite", "Beans", "Smoothbrain", "Chair"};
         Scanner input = new Scanner(System.in);
         int randomInt;
-        randomInt = ((int)(Math.random() * words.length));
+        randomInt = ((int) (Math.random() * words.length));
         String randomWord = words[randomInt];
         Path WhoWon = Paths.get("C:\\Users\\og153182\\Desktop\\Java\\Hangman\\src\\Hangman\\WhoWon.txt");
-
-        System.out.print("                         |--------|\n" +
-                "                         |        |\n" +
-                "                        ( )       |\n" +
-                "                        -|-       |\n" +
-                "                         |        |\n" +
-                "                        / \\       |\n" +
-                "                                  |\n" +
-                "                                --|--");
-        System.out.println("");
-        for(int i = 0; i < randomWord.length(); ++i) {
+        char randomWordToCharArray[] = words[randomInt].toCharArray();
+        for (int i = 0; i < randomWord.length(); ++i) {
             System.out.print("_ ");
         }
-
     }
 }
